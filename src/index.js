@@ -1,16 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { TodoApp } from './TodoApp';
-import { TodoModel } from './TodoModel';
+import { render } from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-let model = new TodoModel('react-todos');
+import App from './containers/App';
 
-function render() {
-  ReactDOM.render(
-    <TodoApp model={model} />,
-    document.querySelector('.todoapp')
-  );
-}
+import reducer from './reducers';
 
-model.subscribe(render);
-render();
+const store = createStore(reducer);
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.querySelector('.todoapp')
+);
