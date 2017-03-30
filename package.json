@@ -1,0 +1,27 @@
+{
+  "name": "react-test-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-eslint": "^7.2.1",
+    "classnames": "^2.2.5",
+    "director": "^1.2.8",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "todomvc": "^0.1.1",
+    "todomvc-app-css": "^2.1.0",
+    "todomvc-common": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-plugin-react": "^6.10.3",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
